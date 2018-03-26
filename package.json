@@ -1,0 +1,13 @@
+{
+  "name": "frontend_firmadigitalv2",
+  "version": "0.1.0",
+  "dependencies": {
+    "http-proxy": "^1.11.2",
+    "passport": "^0.4.0",
+    "passport-saml": "^0.33.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "private": true
+}

@@ -1,0 +1,55 @@
+  <mvc:View
+    controllerName="HelloWorld.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    displayBlock="true">
+    <App>
+      <Page	
+        title="Demo Firma Digital">
+
+
+
+        <core:HTML id="pdfContainer"></core:HTML>
+
+  <ScrollContainer
+      height="100%"
+      width="100%"
+      horizontal="true"
+      vertical="true">
+      <FlexBox direction="Column" renderType="Div" class="sapUiSmallMargin">
+        
+        <PDFViewer id="PDFViewer" source="{/Source}" title="{/Title}" height="{/Height}">
+          <layoutData>
+            <FlexItemData growFactor="1" />
+          </layoutData>
+        </PDFViewer>
+      </FlexBox>
+
+
+<!--         <FlexBox>
+          <Label id="__labe23" required="true" text="Clave" width="100%"/> 
+          <Input editable="true" fieldWidth="80%" id="password" maxWidth="50%" width="90%" type="Password"/>
+          <Button type = "Accept" text="Aceptar" press="onAceptar" />
+          <Button type="Reject" text="Rechazar" press="onRechazar" />
+        </FlexBox> -->
+
+            <Toolbar>
+        <ToolbarSpacer/>
+        <Label id="__labe23" required="true" text="Clave" width="10%"/> 
+        <Input editable="true" fieldWidth="25%" id="password" type="Password" maxWidth="30%" width="25%"/>
+        <Button type = "Accept" text="Aceptar" press="onAceptar" />
+        <Button type="Reject" text="Rechazar" press="onRechazar" />
+        <!-- <Button icon="sap-icon://action" press="" /> -->
+
+        
+        <ToolbarSpacer/>
+      </Toolbar>
+    </ScrollContainer>
+
+
+        
+      </Page>
+    </App>
+  </mvc:View>
