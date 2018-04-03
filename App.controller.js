@@ -8,7 +8,8 @@ sap.ui.define([
 
       var host = "localhost:9999";
       var remoto = "165.227.205.2:9999"; 
-      var server = remoto;
+      var servicio = "firmad";
+      var server = host;
    
    return Controller.extend("HelloWorld.App", {
 
@@ -95,18 +96,18 @@ sap.ui.define([
 
 ///
 
-        var aData = jQuery.ajax({
-                type : "GET",
-                contentType : "application/json",
-                url : "http://165.227.205.2/sso/sf",
-                dataType : "json",
-                success : function(data,textStatus, jqXHR) {
-                    oModel.setData({modelData : data}); 
-                    alert("success to post");
-                    MessageToast.show(data);
-                }
+        // var aData = jQuery.ajax({
+        //         type : "GET",
+        //         contentType : "application/json",
+        //         url : "http://165.227.205.2/sso/sf",
+        //         dataType : "json",
+        //         success : function(data,textStatus, jqXHR) {
+        //             oModel.setData({modelData : data}); 
+        //             alert("success to post");
+        //             MessageToast.show(data);
+        //         }
 
-            });
+        //     });
 
 //
 
